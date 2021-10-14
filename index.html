@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <title>Artificial Christmas tree</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <h1>Goods on sale</h1>
+        <img src="images/christmas-tree.svg" class="christmas-tree" alt="">
+        <section class="tree-interactive" id="tree-interactive">
+            <div class="user_input">
+                <form class="form1" id="form1">
+                    <h2>Artificial Christmas trees</h2><br><br>
+                    <label for="maker">Maker's name:</label>
+                    <input type="text" id="maker" name="maker" title="Include at least 1 symbol" required><br><br><br>
+                    <label for="height">Height in CMs:</label>
+                    <input type="number" id="height" name="height" min="1" max="300" title="Use a number from 0 (not including) to 300" required><br><br><br>
+                    <label for="material">Material:</label>
+                    <input type="text" id="material" name="material" title="Include at least 1 symbol" required><br><br><br>
+                    <!-- <input type="radio" id="pvc" name="material" value="PVC">
+                    <label for="pvc">PVC</label><br>
+                    <input type="radio" id="fishing-line" name="material" value="Fishing line">
+                    <label for="fishing-line">Fishing line</label><br>
+                    <input type="radio" id="pe" name="material" value="PE">
+                    <label for="pe">PE</label><br><br> -->
+                    <label for="price">Price UAH:</label>
+                    <input type="number" id="price" name="price" min="1" title="Use a number from 0 (not including) and higher" required><br><br><br>
+                    <input type="submit" id="submit-button" value="Submit">
+                </form>
+            </div>
+            <div class="operations">
+                <div class="sort">
+                    <h3>To sort the trees by price:</h3><br>
+                    <button class="button" id="sort-button">Click me</button>
+                    <button class="button__cancel" id="cancel-sort-button">Cancel</button><br><br>
+                </div>
+                <div class="search">
+                    <h3>To search the trees by their material type here:</h3><br>
+                    <input type="text" id="search" name="search"><br><br>
+                    <button class="button" id="search-button">And click me</button>
+                    <button class="button__cancel" id="cancel-search-button">Cancel</button><br><br>
+                </div>
+                <div class="count">
+                    <h3>To count total price of your trees:</h3><br>
+                    <button class="button" id="count-button">Click me</button>
+                </div>
+            </div>
+        </section>
+        <section class="items-list" id="items-list">
+            <ul id="items_container">
+                <li class="card">
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
