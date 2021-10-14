@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    font-family: "Quicksand";
+    color: rgb(252, 187, 66);
+    font-weight: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+body {
+    /* background-color: rgba(189, 183, 107, 0.589) ; */
+    background-color: #4caf4f31 ;
+    /* background-image: url("https://www.vision6.com.au/wp-content/uploads/1/2018/11/64a39fc0-8255-4879-93d5-0a63e06c4339.gif"); */
+    background-image: url("https://cms-assets.tutsplus.com/uploads/users/1500/posts/27674/preview_image/winter.jpg");
+}
+
+.page {
+    max-width: 80%;
+    margin: 3% auto;
+    padding: 0;
+}
+
+.tree-interactive {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #f1356d;
+    font-size: 90px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+form {
+    font-size: 25px;
+    font-weight: 500;
+    width: 200%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* background-image: url("https://cdn.dribbble.com/users/3827559/screenshots/9195173/christmas_4x.png"); */
+    /* background-image: url("https://i.pinimg.com/originals/2d/9e/9c/2d9e9cea04c24b191a7706626fa5f617.gif"); */
+    /* background-image: url("https://99px.ru/sstorage/86/2017/05/image_86050517211120196380.gif"); */
+    background-image: url("https://i.pinimg.com/originals/29/31/af/2931afb49b1734a675ad2e3255120292.gif");
+}
+
+input[type=submit] {
+    width: 45%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 4px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* input[type=reset] {
+    width: 45%;
+    background-color: #f1356d;
+    color: white;
+    padding: 14px 4px;
+    margin: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #d62f61;
+} */
+
+h2 {
+    color: rgb(252, 187, 66);
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(48, 138, 87);
+    font-size: 30px;
+}
+
+.card {
+    list-style-type: none;
+    margin: 50px;
+    padding-left: 75px;
+}
+
+ul li div * {
+    color: mediumseagreen;
+    padding-left: 20px;
+}
+
+ul li div {
+    border: 4px solid white;
+    border-radius: 4px;
+    width: 40%;
+    height: 600px;
+    background-image: url("https://cdn.dribbble.com/users/461675/screenshots/5800079/xmas-tree.gif");
+}
+
+ul li i {
+    padding-left: 0;
+}
+
+/* .sort, .search, .count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+#search {
+    width: 100%;
+}
+
+.button {
+    font-weight: 20px;
+    line-height: 30px;
+}
+
+.button:hover {
+    background-color: rgb(240, 170, 40);
+}
+
+button {
+    width: 49.37%;
+    background-color: rgb(252, 187, 66);
+    color: white;
+    padding: 14px 0px;
+    margin: 8px 0px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button__edit {
+    font-size: 20px;
+    line-height: 5px;
+    width: 95%;
+    background-color: #f360269d;
+    color: white;
+    
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 5px;
+    
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button__edit:hover {
+    background-color: #f35b1fcc;
+}
+
+.button__cancel {
+    background-color: #f1356d;
+}
+
+.button__cancel:hover {
+    background-color: #d62f61;
+}
+
+#count-button {
+    width: 100%;
+}
+
+#submit-button {
+    width: 98%;
+    border-color: white;
+}
+
+input:invalid {
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+input:invalid:required {
+    background-image: radial-gradient(#f1353585, rgba(255, 196, 0, 0.267), white);
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
+.christmas-tree {
+    margin-top: 22%;
+    margin-left: 73%;
+    position: fixed;
+    animation: tree 5s ease-in-out infinite alternate;
+}
+
+@keyframes tree {
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+}
