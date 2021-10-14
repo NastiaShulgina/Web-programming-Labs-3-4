@@ -25,7 +25,6 @@ const addItem = ({maker, height, material, price}) => {
 
     const newItem = {
         id: generatedId,
-        
         maker: maker,
         height: height,
         material: material,

@@ -8,7 +8,6 @@
 }
 
 body {
-    /* background-color: rgba(189, 183, 107, 0.589) ; */
     background-color: #4caf4f31 ;
     /* background-image: url("https://www.vision6.com.au/wp-content/uploads/1/2018/11/64a39fc0-8255-4879-93d5-0a63e06c4339.gif"); */
     background-image: url("https://cms-assets.tutsplus.com/uploads/users/1500/posts/27674/preview_image/winter.jpg");
@@ -63,21 +62,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-
-/* input[type=reset] {
-    width: 45%;
-    background-color: #f1356d;
-    color: white;
-    padding: 14px 4px;
-    margin: 8px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=reset]:hover {
-    background-color: #d62f61;
-} */
 
 h2 {
     color: rgb(252, 187, 66);

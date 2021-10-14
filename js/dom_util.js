@@ -43,7 +43,6 @@ export const getInputValues = () => {
 
 export const renderItemsList = (trees) => {
     itemsContainer.innerHTML = "";
-
     for (const tree of trees) {
         addItemToPage(tree);
     }
