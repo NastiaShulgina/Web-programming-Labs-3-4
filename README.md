@@ -1,19 +1,6 @@
-<h1>Labs 3 and 4</h1>
-<h2>Lab 3:</h2>
-Description: In this work, you have to make a simple presentation part of a website - View Page <br>
-Then using JavaScript, you need to implement the following operations on your data (it is up to you to decide which field should be used for each of the operations):<br>
-● Sort of your items option (sort by tree price )<br>
-● Search option (search by tree material) <br>
-● Count total amount of some of the field (total price of the trees) <br><br>
-Requirements:<br>
-● Responsiveness absolutely not required.<br>
-● Styling is not important at all. Is up to you. <br><br><br>
-<h2>Lab 4:</h2>
-Description: In this work, you need to continue working and add two new parts to your website - Create & Edit Pages <br>
-Also you must validate the forms using HTML attributes (inputs must be configured for your data format).<br>
-If incorrect data is entered in the inputs, you must use JavaScript to inform the user with modal windows or just plain alert() function.<br>
-Bonus points are provided for this work, if you implement a styled modal window that will work with JavaScript.<br><br>
-Requirements:<br>
-● Responsiveness absolutely not required.<br>
-● Styling is not important at all. Is up to you.<br>
-
+<h1>Lab 5</h1>
+<h2>CRUD Javascript App: Backend</h2>
+● Description:<br>
+In the last part of working on the website you have to implement all Create/Read/Update/Delete operations which must be made via the corresponding HTTP methods in your REST API.<br>
+● Important. You don't have to make a backend from the beginning - connect an existing one that you worked on in the first year.<br>
+If you don’t have a backend server, you should create a new REST API using any preferred technology.<br>
