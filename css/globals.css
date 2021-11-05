@@ -8,9 +8,16 @@
 }
 
 body {
-    background-color: #4caf4f31 ;
+    /* background-color: #4caf4f31 ; */
     /* background-image: url("https://www.vision6.com.au/wp-content/uploads/1/2018/11/64a39fc0-8255-4879-93d5-0a63e06c4339.gif"); */
-    background-image: url("https://cms-assets.tutsplus.com/uploads/users/1500/posts/27674/preview_image/winter.jpg");
+    /* background: url("https://cms-assets.tutsplus.com/uploads/users/1500/posts/27674/preview_image/winter.jpg") no-repeat center center fixed; */
+    /* background: url("https://media.istockphoto.com/vectors/vector-illustration-of-pine-forest-and-mountains-vector-background-vector-id946650442?k=20&m=946650442&s=612x612&w=0&h=-IZpIrX3Cg-A9LDQGhTObhTTY50UPXqh1-_QFVrldxs=") no-repeat center center fixed; */
+    background: url("https://verygoodtreeservice.com/wp-content/uploads/2018/12/Winter-Stresses-On-Trees-And-Shrubs-Image.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .page {
@@ -129,7 +136,23 @@ button {
 .button__edit {
     font-size: 20px;
     line-height: 5px;
-    width: 95%;
+    width: 42%;
+    background-color: #f39a269d;
+    color: white;
+    
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 5px;
+    
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button__delete {
+    font-size: 20px;
+    line-height: 5px;
+    width: 42%;
     background-color: #f360269d;
     color: white;
     
@@ -143,6 +166,10 @@ button {
 }
 
 .button__edit:hover {
+    background-color: #f39a26ce;
+}
+
+.button__delete:hover {
     background-color: #f35b1fcc;
 }
 

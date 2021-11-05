@@ -1,8 +1,9 @@
+import { getAllTrees, postTree, editTree, deleteTree } from "./api.js";
 import {
     getInputValues,
-    addItemToPage,
     clearInputs,
     renderItemsList,
+    EDIT_BUTTON_PREFIX,
 } from "./dom_util.js";
 
 // const resetButton = document.getElementById("reset-button");
@@ -13,26 +14,37 @@ const cancelSearchButton = document.getElementById("cancel-search-button");
 const sortButton = document.getElementById("sort-button");
 const cancelSortButton = document.getElementById("cancel-sort-button");
 const countButton = document.getElementById("count-button");
-const makerInput = document.getElementById("maker");
+const nameInput = document.getElementById("name");
 const heightInput = document.getElementById("height");
 const materialInput = document.getElementById("material");
 const priceInput = document.getElementById("price");
 
 let trees = [];
 
-const addItem = ({maker, height, material, price}) => {
-    const generatedId = uuid.v1();
+const onEditItem = (element) => {
+    const id = element.target.id.replace(EDIT_BUTTON_PREFIX, "");
+    const {name, height, material, price} = getInputValues();
 
-    const newItem = {
-        id: generatedId,
-        maker: maker,
-        height: height,
-        material: material,
-        price: price,
-    }
+    clearInputs;
 
-    trees.push(newItem);
-    addItemToPage(newItem);
+    editTree(id, {
+        name,
+        height,
+        material,
+        price,
+    }).then(refetchAllTrees);
+}
+
+const onRemoveItem = (element) => {
+    const id = element.target.id.replace("delete-button-", "");
+    deleteTree(id).then(refetchAllTrees);
+}
+
+const refetchAllTrees = async () => {
+    const allTrees = await getAllTrees();
+
+    trees = allTrees;
+    renderItemsList(trees, onEditItem, onRemoveItem);
 }
 
 submitButton.addEventListener("click", (event) => {
@@ -40,11 +52,11 @@ submitButton.addEventListener("click", (event) => {
 
     const invalidSymbols = ["!", ".", "?", ";", "~", "&", "$", "№", "<", ">", "/", "|", "\\", "#", "@", "%", "*", "₴", "`"];
 
-    if (makerInput.value == 0 || heightInput.value == 0 || materialInput.value ==  0 || priceInput.value == 0) {
+    if (nameInput.value == 0 || heightInput.value == 0 || materialInput.value ==  0 || priceInput.value == 0) {
         alert("All fields must be filled!");
     } 
-    else if (invalidSymbols.some(symbol => makerInput.value.includes(symbol))) {
-        alert("Please, write the valid maker's name. Don't use special symbols.")
+    else if (invalidSymbols.some(symbol => nameInput.value.includes(symbol))) {
+        alert("Please, write the valid name's name. Don't use special symbols.")
     } 
     else if(invalidSymbols.some(symbol => materialInput.value.includes(symbol)))  {
         alert("Please, write the valid material. Don't use special symbols.")
@@ -57,19 +69,19 @@ submitButton.addEventListener("click", (event) => {
     } 
     else {
         const inputValues = getInputValues();
-        const {maker, height, material, price} = inputValues;
+        const {name, height, material, price} = inputValues;
         clearInputs();
-        addItem({maker, height, material, price});
+        postTree(inputValues).then(refetchAllTrees);
     }
 })
 
 searchButton.addEventListener("click", () => {
     const foundTrees = trees.filter(tree => tree.material.search(searchInput.value) !==-1);
-    renderItemsList(foundTrees);
+    renderItemsList(foundTrees, onEditItem, onRemoveItem);
 })
 
 cancelSearchButton.addEventListener("click", () => {
-    renderItemsList(trees);
+    renderItemsList(trees, onEditItem, onRemoveItem);
     searchInput.value = "";
 })
 
@@ -86,10 +98,11 @@ countButton.addEventListener("click", () => {
     let treesPrices = trees.map((tree) => {
         return tree.price;
     });
-    let totalPrice = treesPrices.reduce((s, v) => s + +v, 0);
+    let totalPrice = treesPrices.reduce((sum, elem) => sum + +elem, 0);
     console.log(totalPrice);
 
     alert("Total price of the artificial trees added is: " + totalPrice + " UAH.\nMerry Christmas!");
 })
 
-renderItemsList(trees);
+
+refetchAllTrees();
