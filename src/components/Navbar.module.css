@@ -1,0 +1,70 @@
+.navbar {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.603);
+    position: fixed;
+    backdrop-filter: blur(2px);
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    }
+
+.navbar .links {
+    margin-left: 0;
+}
+.navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+    /* font-weight: 600; */
+    }
+    
+.navbar a:hover {
+    color: #E76F51;
+    }
+
+/* #home {
+    color: #A3A380;
+    }
+
+#home:hover {
+    color: #FFD972;
+    } */
+
+#login, #register {
+    padding: 10px 30px;
+    width: 200px;
+    color:#6D4C3D;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: medium;
+    line-height: 20px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #efebcea1;
+    }
+    
+#register {
+    margin-left: 20px;
+    }
+
+#navbar_buttons {
+    display: flex;
+    margin-right: 40px;
+    }
+
+#register:hover, #login:hover {
+    /* background-color: #f79d65bb; */
+    box-shadow: #6D4C3D;
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_21/1367495/cadbury-chocolate-today-main-180913.jpg");
+    background-size: cover;
+    color: #fefae0 !important;
+    }

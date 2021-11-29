@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x:hidden;
+}
+
+#stamp_pic {
+    border-radius: 100%;
+    float:left;
+    /* -ms-transition: rotate(90deg); */
+    }
+
+.discount_container {
+    display: flex;
+    justify-content:space-between;
+    max-width: 85%;
+    margin: 80px auto -40px;
+}
+
+#question {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 75px;
+    padding-top: 30px;
+    color: #e65c39d3;
+}
+
+#answer {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 75px;
+    padding-left: 30%;
+    color: #a1b481;
+    padding-top: 7%;
+}
+
+#discount_link {
+    align-self: center;
+    font-family: 'Nothing You Could Do', cursive;
+    color:#f6aa1c;
+    font-size: 40px;
+    max-width: 100%;
+    text-decoration: none;
+    padding-bottom: 80px;
+    margin-left: -25%;
+}
+
+#discount_link:hover {
+    color: #E76F51;
+    -webkit-text-stroke: .04em rgba(247, 218, 54, 0.767);
+}
+
+#discount_link::before, #discount_link::after{
+    content: "";
+    position: relative;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;  
+    }
+
+#discount_link::before{
+    background-color:#fdfcf5cb;
+    border-left: 700px solid #f8f8f807;
+    animation: typing 3s steps(38) forwards infinite;
+    }
+
+@keyframes typing{
+    to{
+        left: 100%;    
+    }
+    }
