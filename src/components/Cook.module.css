@@ -1,0 +1,47 @@
+.buttons {
+    padding: 5px 20px;
+    width: 300px;
+    color:#6D4C3D;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: medium;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 80px;
+    background-color: #efebcea1;
+    margin-top: 5px;
+}
+
+.buttons:hover {
+    box-shadow: #6D4C3D;
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_21/1367495/cadbury-chocolate-today-main-180913.jpg");
+    background-size: cover;
+    color: #fefae0 !important;
+    }
+
+#personal_info {
+    width: max-content;
+    background-image: url("https://image.freepik.com/free-photo/food-background-with-italian-food-ingredients_1220-3465.jpg");
+    padding: 100px 80px 60px;
+    margin-top: -30px;
+    margin-bottom: -10px;
+}
+
+#name {
+    color: rgb(52, 73, 104);
+}
+
+#h4 {
+    color: rgb(68, 89, 119);
+    align-self: center;
+}
+
+#pricing {
+    color: rgb(68, 89, 119);
+    display: flex;
+    align-self: center;
+}
+
+#p {
+    text-align: center;
+}

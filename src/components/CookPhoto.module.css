@@ -1,0 +1,13 @@
+#photo {
+    padding-top: 0;
+    margin-top: -30px;
+    padding-left: 0;
+    margin-left: -700px;
+    align-self: center;
+    width: 500px;
+    height: 495px;
+    border-radius: 10px ;
+    box-shadow: 1px 3px 5px #918450;
+    object-fit: cover;
+    object-position: center top;
+}
