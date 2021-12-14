@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* {
+  margin: 0;
+  /* font-family: 'Noticia Text'; */
+  font-family: 'Merriweather', serif;
+  color: #6D4C3D;
+  /* overflow-x:hidden; */
+  /* color: #333; */
+}
+
+/* ::-webkit-scrollbar {
+  width: 0;
+} */
+
+.App {
+  height: 753px;
+  background-color: #fdfcf56c;
+  position: relative;
+  min-height: 100%;
+}

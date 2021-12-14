@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+.cooks_container {
+    background-color: #eee5bc5d;
+    display: flex;
+    flex-direction: column;
+}
+
+.cooks_photos {
+    margin: 5% 15% 3% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooks_photos {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+.all_cooks {
+    margin: auto 8% 1% 8%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#Will, #Fieri, #Ramsay, #Zendaya, .cook_preview {
+    width: 22%;
+    height: 250px;
+    border-radius: 10px;
+    border: #fcd00d;
+    box-shadow: 1px 3px 5px #918450;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.cook_preview {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #918450;
+    height: fit-content;
+    padding: auto 30px;
+}
+
+.cook_preview:hover, #Will:hover, #Fieri:hover, #Ramsay:hover, #Zendaya:hover {
+    box-shadow: 3px 9px 15px #918450;
+}
+
+.cook_preview h3 {
+    font-size: 25px;
+    color: #E76F51;
+    margin-bottom: 3%;
+    margin-top: 10px;
+}
+
+.cook_preview h4 {
+    display: flex;
+    color: #918450;
+    font-size: 15px;
+    margin-bottom: 3%;
+}
+
+.cook_preview p {
+    margin: auto 15px 15px 15px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.our_cooks {
+    margin-top: 0;
+    padding-top: 0;
+    -webkit-text-stroke: .002em rgba(247, 218, 54, 0.767);
+    align-self: center;
+    font-size: 70px;
+    font-style: normal;
+    color: #E76F51;
+    font-family: 'Rock Salt', cursive;
+}
+
+.choose {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 35px;
+    align-self: center;
+    color: #a1b481;
+    padding-left: 4%;
+    padding-bottom: 3%;
+}
+
+.search {
+    background-color: #a1b481;
+    height: 50px;
+    padding: 3px 30px;
+    width: 330px;
+    color:#fefae0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: x-large;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.search:hover {
+    cursor: pointer;
+    background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2020%2F07%2F09%2Fin-defense-of-bay-leaves-FT-BLOG0720.jpg") !important;
+    background-size: cover !important;
+    color: #fefae0 !important;
+}

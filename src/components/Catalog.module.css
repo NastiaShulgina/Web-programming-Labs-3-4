@@ -1,0 +1,47 @@
+.catalog {
+    padding-top: 7%;
+    min-height: 100%;
+}
+
+.search_section {
+    background-color: #e3f1d2;
+    padding-left: 3%;
+}
+
+.search_form {
+    display: flex;
+    justify-content: center;
+}
+
+.search_form * {
+    padding: 10px;
+    margin: 6px;
+    display: flex;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, .autocomplete__list {
+    border-radius: 10px;
+    border: 0;
+    color: grey;
+}
+
+.catalogCards {
+    margin: auto 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+#cook_card {
+    width: 21%;
+    margin: 2% 2%;
+}
+
+#cook_card * {
+    margin: 1%;
+    text-decoration: none;
+}
